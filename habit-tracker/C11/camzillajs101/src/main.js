@@ -21,7 +21,7 @@ const renderHabits = habits => {
 
     habits_container.innerHTML = habits.map(habit => {
         return `<section class="habit">
-        <h3>${habit.name}</h3><h4>${habit.streak}</h4>
+        <h3>${habit.name}</h3><h4>Target streak: ${habit.streak} day(s)</h4>
         </section>`
     }).join("\n");
 }

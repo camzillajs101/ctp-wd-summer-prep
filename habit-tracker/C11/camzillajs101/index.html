@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <link rel="stylesheet" href="/src/style.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vite + React + TS</title>
 </head>
@@ -11,13 +12,14 @@
     <h1>My habits</h1>
     <section id="habits_container">You have no habits</section>
 
-    <h1>Create habit</h1>
     <form id="new_habit">
+      <h1>Create habit</h1>
+
       <label for="habit_name">Habit name:</label>
-      <input type="text" name="habit_name" id="habit_name" required>
+      <input type="text" name="habit_name" id="habit_name" placeholder="Take out trash" required>
 
       <label for="target_streak">Target streak:</label>
-      <input type="number" name="target_streak" id="target_streak" min="1" required>
+      <input type="number" name="target_streak" id="target_streak" min="1" placeholder="5" required>
 
       <input type="submit" id="submit_new_habit">
     </form>
